@@ -1,11 +1,19 @@
 package com.williamvanderhoef.gilt.model;
 
+import java.io.Serializable;
+
 /**
  *
  *
  */
-public class Content {
+public class Content implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7650507357536847400L;
+	
+	
 	private String description;
 	private String fitNotes;
 	private String material;

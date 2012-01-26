@@ -1,11 +1,19 @@
 package com.williamvanderhoef.gilt.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  *
  */
-public class Sale {
+public class Sale implements Serializable
+{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1692215417533345107L;
+	
+	
 	//these are guaranteed for each sale
 	private String name;
 	private String saleUrl;

@@ -1,13 +1,20 @@
 package com.williamvanderhoef.gilt.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  *
  *
  */
-public class Product {
-
+public class Product implements Serializable
+{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 44331491353480162L;
+	
+	
 	//these are guaranteed
 	private String name;
 	private String brand;

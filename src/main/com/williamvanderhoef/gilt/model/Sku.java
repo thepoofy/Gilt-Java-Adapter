@@ -1,13 +1,20 @@
 package com.williamvanderhoef.gilt.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  *
  *
  */
-public class Sku {
-
+public class Sku implements Serializable
+{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 9033767257655663534L;
+	
+	
 	private String msrpPrice;
 	private String salePrice;
 

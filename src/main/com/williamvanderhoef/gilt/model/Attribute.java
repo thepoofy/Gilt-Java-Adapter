@@ -1,10 +1,18 @@
 package com.williamvanderhoef.gilt.model;
 
+import java.io.Serializable;
+
 /**
  *
  */
-public class Attribute {
-
+public class Attribute implements Serializable
+{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1963257685901321886L;
+	
+	
 	private String name;
 	private String value;
 	/**
