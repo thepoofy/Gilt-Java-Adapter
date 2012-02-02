@@ -2,6 +2,7 @@ package com.williamvanderhoef.gilt.model;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -23,7 +24,7 @@ public class Product implements Serializable
 
 	//these are optional
 	private String url;
-	private List<String> imageUrls;
+	private Map<String, List<String>> imageUrls;
 	/**
 	 * @return the name
 	 */
@@ -87,13 +88,13 @@ public class Product implements Serializable
 	/**
 	 * @return the imageUrls
 	 */
-	public List<String> getImageUrls() {
+	public Map<String, List<String>> getImageUrls() {
 		return imageUrls;
 	}
 	/**
 	 * @param imageUrls the imageUrls to set
 	 */
-	public void setImageUrls(List<String> imageUrls) {
+	public void setImageUrls(Map<String, List<String>> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
 

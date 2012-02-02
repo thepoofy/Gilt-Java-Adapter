@@ -15,6 +15,9 @@ public class Sku implements Serializable
 	private static final long serialVersionUID = 9033767257655663534L;
 	
 	
+	private Number id;
+	private String inventoryStatus;
+	
 	private String msrpPrice;
 	private String salePrice;
 
@@ -68,6 +71,30 @@ public class Sku implements Serializable
 	 */
 	public void setAttributes(List<Attribute> attributes) {
 		this.attributes = attributes;
+	}
+	/**
+	 * @return the id
+	 */
+	public Number getId() {
+		return id;
+	}
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Number id) {
+		this.id = id;
+	}
+	/**
+	 * @return the inventoryStatus
+	 */
+	public String getInventoryStatus() {
+		return inventoryStatus;
+	}
+	/**
+	 * @param inventoryStatus the inventoryStatus to set
+	 */
+	public void setInventoryStatus(String inventoryStatus) {
+		this.inventoryStatus = inventoryStatus;
 	}
 
 
