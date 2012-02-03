@@ -11,11 +11,11 @@ import java.util.Map;
 public class Product implements Serializable
 {
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 44331491353480162L;
-	
-	
+
+
 	//these are guaranteed
 	private String name;
 	private String brand;
@@ -24,7 +24,7 @@ public class Product implements Serializable
 
 	//these are optional
 	private String url;
-	private Map<String, List<String>> imageUrls;
+	private Map<String, List<Image>> imageUrls;
 	/**
 	 * @return the name
 	 */
@@ -88,13 +88,13 @@ public class Product implements Serializable
 	/**
 	 * @return the imageUrls
 	 */
-	public Map<String, List<String>> getImageUrls() {
+	public Map<String, List<Image>> getImageUrls() {
 		return imageUrls;
 	}
 	/**
 	 * @param imageUrls the imageUrls to set
 	 */
-	public void setImageUrls(Map<String, List<String>> imageUrls) {
+	public void setImageUrls(Map<String, List<Image>> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
 

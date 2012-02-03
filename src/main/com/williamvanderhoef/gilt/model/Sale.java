@@ -10,16 +10,16 @@ import java.util.Map;
 public class Sale implements Serializable
 {
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = -1692215417533345107L;
-	
-	
+
+
 	//these are guaranteed for each sale
 	private String name;
 	private String store;
 	private String saleUrl;
-	private Map<String,Object> imageUrls;
+	private Map<String, List<Image>> imageUrls;
 	private String begins;
 
 	//these are optional
@@ -60,14 +60,14 @@ public class Sale implements Serializable
 	/**
 	 * @return the imageUrls
 	 */
-	public Map<String, Object> getImageUrls() {
+	public Map<String, List<Image>> getImageUrls() {
 		return imageUrls;
 	}
-	
+
 	/**
 	 * @param imageUrls the imageUrls to set
 	 */
-	public void setImageUrls(Map<String, Object> imageUrls) {
+	public void setImageUrls(Map<String, List<Image>> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
 
