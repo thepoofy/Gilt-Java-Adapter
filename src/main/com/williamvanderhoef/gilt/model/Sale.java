@@ -17,8 +17,11 @@ public class Sale implements Serializable
 
 	//these are guaranteed for each sale
 	private String name;
-	private String store;
+	private String sale;
 	private String saleUrl;
+	private String saleKey;
+	private String store;
+
 	private Map<String, List<Image>> imageUrls;
 	private String begins;
 
@@ -27,7 +30,7 @@ public class Sale implements Serializable
 	private String description;
 
 	//present if query includes product_detail=true and sale is active
-	private List<Product> products;
+	private List<String> products;
 
 	/**
 	 * @return the name
@@ -116,14 +119,14 @@ public class Sale implements Serializable
 	/**
 	 * @return the products
 	 */
-	public List<Product> getProducts() {
+	public List<String> getProducts() {
 		return products;
 	}
 
 	/**
 	 * @param products the products to set
 	 */
-	public void setProducts(List<Product> products) {
+	public void setProducts(List<String> products) {
 		this.products = products;
 	}
 
@@ -139,5 +142,33 @@ public class Sale implements Serializable
 	 */
 	public void setStore(String store) {
 		this.store = store;
+	}
+
+	/**
+	 * @return the sale
+	 */
+	public String getSale() {
+		return sale;
+	}
+
+	/**
+	 * @param sale the sale to set
+	 */
+	public void setSale(String sale) {
+		this.sale = sale;
+	}
+
+	/**
+	 * @return the saleKey
+	 */
+	public String getSaleKey() {
+		return saleKey;
+	}
+
+	/**
+	 * @param saleKey the saleKey to set
+	 */
+	public void setSaleKey(String saleKey) {
+		this.saleKey = saleKey;
 	}
 }

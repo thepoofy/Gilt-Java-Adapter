@@ -18,13 +18,17 @@ public class Product implements Serializable
 
 	//these are guaranteed
 	private String name;
+	private String product;	//url via the api for this product
+	private String id;		//unique id for this product
 	private String brand;
-	private Content content;
+	private String url;
+	private Map<String, List<Image>> imageUrls;
 	private List<Sku> skus;
 
 	//these are optional
-	private String url;
-	private Map<String, List<Image>> imageUrls;
+	private Content content;
+
+
 	/**
 	 * @return the name
 	 */
@@ -97,7 +101,29 @@ public class Product implements Serializable
 	public void setImageUrls(Map<String, List<Image>> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
-
-
+	/**
+	 * @return the product
+	 */
+	public String getProduct() {
+		return product;
+	}
+	/**
+	 * @param product the product to set
+	 */
+	public void setProduct(String product) {
+		this.product = product;
+	}
+	/**
+	 * @return the id
+	 */
+	public String getId() {
+		return id;
+	}
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(String id) {
+		this.id = id;
+	}
 
 }

@@ -10,14 +10,14 @@ import java.util.List;
 public class Sku implements Serializable
 {
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 9033767257655663534L;
-	
-	
-	private Number id;
+
+
+	private Long id;
 	private String inventoryStatus;
-	
+
 	private String msrpPrice;
 	private String salePrice;
 
@@ -75,13 +75,13 @@ public class Sku implements Serializable
 	/**
 	 * @return the id
 	 */
-	public Number getId() {
+	public Long getId() {
 		return id;
 	}
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(Number id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	/**

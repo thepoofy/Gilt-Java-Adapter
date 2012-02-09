@@ -9,16 +9,16 @@ import java.io.Serializable;
 public class Content implements Serializable{
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 7650507357536847400L;
-	
-	
+
 	private String description;
 	private String fitNotes;
 	private String material;
-	private String origin;
 	private String careInstructions;
+	private String origin;
+
 	/**
 	 * @return the description
 	 */
