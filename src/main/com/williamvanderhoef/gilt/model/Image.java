@@ -12,7 +12,6 @@ public class Image implements Serializable {
 	/** */
 	private static final long serialVersionUID = 1171337182706141839L;
 
-
 	private Number height;
 	private Number width;
 	private String url;
