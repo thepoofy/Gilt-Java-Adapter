@@ -19,7 +19,7 @@ public class Product implements Serializable
 	//these are guaranteed
 	private String name;
 	private String product;	//url via the api for this product
-	private String id;		//unique id for this product
+	private Number id;		//unique id for this product
 	private String brand;
 	private String url;
 	private Map<String, List<Image>> imageUrls;
@@ -116,13 +116,13 @@ public class Product implements Serializable
 	/**
 	 * @return the id
 	 */
-	public String getId() {
+	public Number getId() {
 		return id;
 	}
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(String id) {
+	public void setId(Number id) {
 		this.id = id;
 	}
 
