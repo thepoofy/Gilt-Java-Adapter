@@ -9,9 +9,7 @@ import java.util.Map;
  */
 public class Sale implements Serializable
 {
-	/**
-	 *
-	 */
+	/** */
 	private static final long serialVersionUID = -1692215417533345107L;
 
 
