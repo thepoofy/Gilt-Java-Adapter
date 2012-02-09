@@ -5,13 +5,17 @@ import java.util.List;
 
 import com.williamvanderhoef.gilt.model.Sale;
 
+/**
+ *
+ * @author wvanderhoef
+ *
+ */
 public class SalesResponse implements GetResponseBase, Serializable{
-	
+
 	/** */
 	private static final long serialVersionUID = -5055078478329048109L;
-	
-	
-	public List<Sale> sales;
+
+	private List<Sale> sales;
 
 	/**
 	 * @return the sales
@@ -26,7 +30,7 @@ public class SalesResponse implements GetResponseBase, Serializable{
 	public void setSales(List<Sale> sales) {
 		this.sales = sales;
 	}
-	
-	
+
+
 
 }
