@@ -21,10 +21,12 @@ public class Product implements Serializable
 	private String product;	//url via the api for this product
 	private Number id;		//unique id for this product
 	private String brand;
-	private String url;
+	private String url;    
 	private Map<String, List<Image>> imageUrls;
 	private List<Sku> skus;
 
+	private List<String> categories;
+	
 	//these are optional
 	private Content content;
 
