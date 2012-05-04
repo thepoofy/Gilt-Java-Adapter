@@ -27,7 +27,7 @@ public class Product implements Serializable
 
 	private List<String> categories;
 	
-	//these are optional
+    //these are optional
 	private Content content;
 
 
@@ -128,4 +128,10 @@ public class Product implements Serializable
 		this.id = id;
 	}
 
+	public List<String> getCategories() {
+        return categories;
+    }
+    public void setCategories(List<String> categories) {
+        this.categories = categories;
+    }
 }
