@@ -24,7 +24,8 @@ public class Product implements Serializable
 	private String url;
 	private Map<String, List<Image>> imageUrls;
 	private List<Sku> skus;
-
+	private List<String> categories;
+	
 	//these are optional
 	private Content content;
 
@@ -124,6 +125,18 @@ public class Product implements Serializable
 	 */
 	public void setId(Number id) {
 		this.id = id;
+	}
+	/**
+	 * @return the categories
+	 */
+	public List<String> getCategories() {
+		return categories;
+	}
+	/**
+	 * @param categories the categories to set
+	 */
+	public void setCategories(List<String> categories) {
+		this.categories = categories;
 	}
 
 }
